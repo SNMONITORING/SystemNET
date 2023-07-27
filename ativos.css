@@ -1,0 +1,128 @@
+/* Estilos globais */
+body {
+    font-family: 'Staatliches', 'cursive';
+    margin: 0;
+    padding: 0;
+    color: #555;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo {
+    display: inline-block;
+    width: 100px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  /* Estilos da seção de monitoramento em tempo real */
+  #real-time-monitoring {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  #real-time-monitoring h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+
+  #real-time-monitoring p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  /* Estilos do rodapé */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  /* Estilos personalizados */
+  #real-time-monitoring .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .monitoring-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .monitoring-text {
+    flex: 1;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  /* Estilos do modo escuro */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+
+  header.dark-mode {
+    background-color: #111;
+  }
+
+  #real-time-monitoring.dark-mode {
+    background-color: #444;
+  }
+
+  footer.dark-mode {
+    background-color: #111;
+  }
+
+  /* Estilo do botão "Voltar" */
+  .btn-voltar {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-voltar:hover {
+    background-color: #000;
+  }
