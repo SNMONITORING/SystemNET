@@ -1,0 +1,356 @@
+/* Estilos globais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #555;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  display: inline-block;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos da seção de serviços */
+#services {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+#services p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.service-image {
+  max-width: 100px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.service-text {
+  text-align: justify;
+  margin-left: 30px;
+  flex: 1;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* Estilos personalizados */
+#services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Estilos do modo escuro */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+header.dark-mode {
+  background-color: #111;
+}
+
+#services.dark-mode {
+  background-color: #444;
+}
+
+/* Estilo do botão "Voltar" */
+.btn-voltar {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #00f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-top: 40px;
+}
+
+.btn-voltar:hover {
+  background-color: #000;
+}
+
+/* Estilos do carousel */
+.carousel-text{
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.carousel {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: -25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: none;
+  transition: opacity 0.5s ease;
+  text-align: center; /* Centralizar o conteúdo dentro do item */
+}
+
+.carousel-item:nth-child(1) {
+  display: block;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1); /* Ajuste o valor do último parâmetro para aumentar ou diminuir a transparência */
+  color: #fff;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Ajuste o valor do último parâmetro para alterar o tom escuro */
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+
+
+/* Estilos do rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* Estilos personalizados */
+#services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Estilos do modo escuro */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+header.dark-mode {
+  background-color: #111;
+}
+
+#services.dark-mode {
+  background-color: #444;
+}
+
+/* Estilo do botão "Voltar" */
+.btn-voltar {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #00f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-top: 40px;
+}
+
+.btn-voltar:hover {
+  background-color: #000;
+}
+
+/* Estilos do carousel */
+.carousel-text{
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.carousel {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: -25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: none;
+  transition: opacity 0.5s ease;
+  text-align: center; /* Centralizar o conteúdo dentro do item */
+}
+
+.carousel-item:nth-child(1) {
+  display: block;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1); /* Ajuste o valor do último parâmetro para aumentar ou diminuir a transparência */
+  color: #fff;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.3); /* Ajuste o valor do último parâmetro para alterar o tom escuro */
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+

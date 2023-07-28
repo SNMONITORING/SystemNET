@@ -1,0 +1,181 @@
+/* Estilos globais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    background-color: #f2f2f2;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #logo {
+    display: inline-block;
+    width: 100px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Estilos da seção "Sobre Nós" */
+  #about-us {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  #about-us h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+
+  #about-us p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  /* Estilos do rodapé */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  footer ul li:last-child {
+    margin-right: 0;
+  }
+
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Estilos personalizados */
+  #about-us .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-us-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .about-us-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  .about-us-image img {
+    max-width: 100%;
+  }
+
+  /* Estilos do modo escuro */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+
+  header.dark-mode {
+    background-color: #111;
+  }
+
+  #about-us.dark-mode {
+    background-color: #444;
+  }
+
+  footer.dark-mode {
+    background-color: #111;
+  }
+
+  /* Estilo do botão "Voltar" */
+  .btn-voltar {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-voltar:hover {
+    background-color: #000;
+  }
+
+  /* Estilo das imagens de contato e e-mail */
+.icon {
+  width: 24px; /* Aumentado o tamanho do ícone para melhor visibilidade */
+  height: 24px; /* Aumentado o tamanho do ícone para melhor visibilidade */
+  vertical-align: middle; /* Alinha verticalmente as imagens com o texto */
+  display: inline-flex; /* Centraliza verticalmente em relação ao texto */
+  align-items: center; /* Centraliza verticalmente em relação ao texto */
+}
+
+/* Estilo específico do ícone de e-mail */
+.contact-icon {
+  margin-right: 8px; /* Reduzido o espaço à direita do ícone de e-mail para melhor alinhamento */
+}
+
+/* Estilo específico do ícone do WhatsApp */
+.whatsapp-icon {
+  margin-left: 8px; /* Reduzido o espaço à esquerda do ícone do WhatsApp para melhor alinhamento */
+}
